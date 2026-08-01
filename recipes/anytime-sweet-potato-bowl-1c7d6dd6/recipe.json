@@ -1,0 +1,271 @@
+{
+  "id": "1c7d6dd6-1d42-4b0e-8cc4-452d6c40caac",
+  "title": "Anytime Sweet Potato Bowl",
+  "ingredients": [
+    {
+      "id": "0b1f5fac",
+      "name": "sweet potatoes",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "large",
+        "raw": "2",
+        "note": "diced into 1/2-inch cubes"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "5c07e7e6",
+      "name": "olive oil",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "tbsp",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "33e7262a",
+      "name": "kosher salt",
+      "quantity": {
+        "amount": 0.25,
+        "unit": "tsp",
+        "raw": "1/4",
+        "note": "plus an extra pinch"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "0d92db69",
+      "name": "chili powder",
+      "quantity": {
+        "amount": 0.25,
+        "unit": "tsp",
+        "raw": "1/4",
+        "note": "divided"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "1101a292",
+      "name": "(or 1 1/2 cups) black beans",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "can",
+        "raw": "1",
+        "note": "drained"
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "4fecff60",
+      "name": "cumin",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "tsp",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "e9fec687",
+      "name": "chorizo (optional)",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "cups",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "dd3e8c33",
+      "name": "eggs",
+      "quantity": {
+        "amount": 4.0,
+        "unit": "",
+        "raw": "4",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "a290dde6",
+      "name": "avocados",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "",
+        "raw": "2",
+        "note": "sliced"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "4dbb5cf7",
+      "name": "jar tomatillo salsa",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "small",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "1b93feca",
+      "name": "Mexican crema",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "cup",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "c7e1efd8",
+      "name": "arugula",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "cups",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "preheat",
+      "detail": "Preheat oven to 400 degrees.",
+      "ingredient_ids": [],
+      "consumes_steps": [],
+      "is_header": true,
+      "duration": ""
+    },
+    {
+      "action": "toss",
+      "detail": "Toss sweet potato cubes with olive oil and season with salt and half the chili powder.",
+      "ingredient_ids": [
+        "0b1f5fac",
+        "5c07e7e6",
+        "33e7262a",
+        "0d92db69"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "roast",
+      "detail": "Roast on a parchment-lined baking sheet in oven until tender, about 20 minutes.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        1
+      ],
+      "is_header": false,
+      "duration": "20 minutes"
+    },
+    {
+      "action": "heat",
+      "detail": "Heat black beans on the stove or in the microwave.",
+      "ingredient_ids": [
+        "1101a292"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "season",
+      "detail": "Season with salt, cumin, and the remaining chili powder.",
+      "ingredient_ids": [
+        "33e7262a",
+        "0d92db69",
+        "4fecff60"
+      ],
+      "consumes_steps": [
+        3
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "using",
+      "detail": "If using, brown chorizo in a skillet on the stove,breaking it into crumbles as it cooks, for about 5-8 minutes.",
+      "ingredient_ids": [
+        "e9fec687"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": "5-8 minutes"
+    },
+    {
+      "action": "prepare",
+      "detail": "Prepare eggs to your liking. (Scrambled, over easy, or poached will work.)",
+      "ingredient_ids": [
+        "dd3e8c33"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "divide",
+      "detail": "Divide roasted sweet potatoes between four bowls.",
+      "ingredient_ids": [
+        "0b1f5fac"
+      ],
+      "consumes_steps": [
+        6
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add black beans on the side, and top with avocado slices, egg, and chorizo.",
+      "ingredient_ids": [
+        "1101a292",
+        "e9fec687"
+      ],
+      "consumes_steps": [
+        7
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "drizzle",
+      "detail": "Drizzle with tomatillo salsa and crema and top with arugula.",
+      "ingredient_ids": [
+        "4dbb5cf7",
+        "1b93feca",
+        "c7e1efd8"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    }
+  ],
+  "servings": null,
+  "source": "https://www.texasmonthly.com/recipe/sweet-potato-bowl/",
+  "notes": "",
+  "scale_factor": 1.0,
+  "created_at": "2026-08-01T21:53:00.200129+00:00",
+  "original_protein": "(or 1 1/2 cups) black beans",
+  "substituted_protein": null
+}
