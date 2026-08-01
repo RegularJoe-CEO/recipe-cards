@@ -1,0 +1,205 @@
+{
+  "id": "cf4bc15e-a077-445f-8fb4-d9d16a164ff9",
+  "title": "Masa Biscuits",
+  "ingredients": [
+    {
+      "id": "5ca6babd",
+      "name": "all-purpose flour",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "cups",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "85266fc2",
+      "name": "masa harina",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "cup",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "306d88be",
+      "name": "baking powder",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "tbsp",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "6f773914",
+      "name": "baking soda",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "tsp",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "3758798f",
+      "name": "kosher salt",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "tsp",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "138f0936",
+      "name": "buttermilk",
+      "quantity": {
+        "amount": 1.25,
+        "unit": "cups",
+        "raw": "1 1/4",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "0e8c4324",
+      "name": "(1 1/2 sticks) unsalted butter",
+      "quantity": {
+        "amount": 12.0,
+        "unit": "tbsp",
+        "raw": "12",
+        "note": "diced small"
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "heat",
+      "detail": "Heat your oven to 425 degrees F.",
+      "ingredient_ids": [],
+      "consumes_steps": [],
+      "is_header": true,
+      "duration": ""
+    },
+    {
+      "action": "mixing",
+      "detail": "In a medium mixing bowl, use a whisk to combine the dry ingredients: flour, masa harina, baking powder, baking soda, and salt.",
+      "ingredient_ids": [
+        "5ca6babd",
+        "85266fc2",
+        "306d88be",
+        "6f773914",
+        "3758798f"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the buttermilk and stir to combine.",
+      "ingredient_ids": [
+        "138f0936"
+      ],
+      "consumes_steps": [
+        1
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "fold in",
+      "detail": "Fold in the butter cubes.",
+      "ingredient_ids": [
+        "0e8c4324"
+      ],
+      "consumes_steps": [
+        2
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "pat",
+      "detail": "Pat the dough into a 1-inch-thick rectangle.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        3
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "use",
+      "detail": "Use a sharp knife to cut the dough into 12 equally sized square biscuits.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        4
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "press",
+      "detail": "Press the knife straight down and don't drag it; dragging will prevent the biscuits from rising as high as they can.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        5
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "place",
+      "detail": "Place the squares on a parchment-lined sheet pan.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        6
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "bake",
+      "detail": "Bake for 15 minutes.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        7
+      ],
+      "is_header": false,
+      "duration": "15 minutes"
+    },
+    {
+      "action": "serve",
+      "detail": "Serve warm.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        8
+      ],
+      "is_header": false,
+      "duration": ""
+    }
+  ],
+  "servings": "12",
+  "source": "https://www.texasmonthly.com/recipe/masa-biscuits/",
+  "notes": "",
+  "scale_factor": 1.0,
+  "created_at": "2026-08-01T21:19:39.183551+00:00",
+  "original_protein": null,
+  "substituted_protein": null
+}
