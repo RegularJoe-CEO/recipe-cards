@@ -1,0 +1,534 @@
+{
+  "id": "52cf2a73-e731-437a-be02-9c3372990661",
+  "title": "Vietnamese Pho recipe",
+  "ingredients": [
+    {
+      "id": "4c940761",
+      "name": "onions (",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "large",
+        "raw": "2",
+        "note": "halved)"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "24cbcd1a",
+      "name": "/ 5oz ginger (",
+      "quantity": {
+        "amount": 150.0,
+        "unit": "g",
+        "raw": "150",
+        "note": "sliced down the centre)"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "46ac9ffc",
+      "name": "cinnamon quills",
+      "quantity": {
+        "amount": 4.0,
+        "unit": "",
+        "raw": "4",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "6e206a22",
+      "name": "cardamon pods",
+      "quantity": {
+        "amount": 4.0,
+        "unit": "",
+        "raw": "4",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "764c4b5e",
+      "name": "((the spice cloves!))",
+      "quantity": {
+        "amount": 3.0,
+        "unit": "cloves",
+        "raw": "3",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "59cf88e2",
+      "name": "coriander seeds",
+      "quantity": {
+        "amount": 5.0,
+        "unit": "tbsp",
+        "raw": "5",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "4660fbf1",
+      "name": "beef",
+      "quantity": {
+        "amount": 5.0,
+        "unit": "kg",
+        "raw": "5",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "6f05b84c",
+      "name": "/ 2lb meaty beef bones",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "kg",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "b9a7e198",
+      "name": "/ 2lb marrow bones ((leg",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "kg",
+        "raw": "1",
+        "note": "knuckle), cut to reveal marrow)"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "a81332aa",
+      "name": "/ 3.75 quarts water ((15 cups))",
+      "quantity": {
+        "amount": 5.0,
+        "unit": "litres",
+        "raw": "5",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "0d742282",
+      "name": "white sugar",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "tbsp",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "60003bbe",
+      "name": "salt",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "tbsp",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "a506275d",
+      "name": "/ 3 tbsp fish sauce ((Note 2))",
+      "quantity": {
+        "amount": 40.0,
+        "unit": "ml",
+        "raw": "40",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "f7e29f5d",
+      "name": "/ 1.5 oz dried rice sticks ((or 120g/4oz fresh) (Note 3))",
+      "quantity": {
+        "amount": 50.0,
+        "unit": "g",
+        "raw": "50",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "42b809c8",
+      "name": "/ 1 oz beef",
+      "quantity": {
+        "amount": 30.0,
+        "unit": "g",
+        "raw": "30",
+        "note": "raw, very thinly sliced ((Note 4))"
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "dcb0ba3f",
+      "name": "brisket slices ((used for broth))",
+      "quantity": {
+        "amount": 4.0,
+        "unit": "",
+        "raw": "3 - 5",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "80a2fb01",
+      "name": "Beansprouts",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "handful"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "66c4c21b",
+      "name": "Thai basil",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "3 - 5 sprigs"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "db79a832",
+      "name": "Coriander/cilantro, 3 - 5 sprigs ((or more basil))",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "642a6cb7",
+      "name": "Lime wedges*",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "33a1559a",
+      "name": "Finely sliced red chilli*",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "1576ef03",
+      "name": "Hoisin sauce*",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "76d6c5a6",
+      "name": "Sriracha* ((for spiciness))",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "aromatics",
+      "detail": "Aromatics Heat a heavy based skillet over high heat (no oil) until smoking.",
+      "ingredient_ids": [],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "place",
+      "detail": "Place onion and ginger in pan cut side down.",
+      "ingredient_ids": [
+        "24cbcd1a"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "cook",
+      "detail": "Cook for a few minutes until it's charred, then turn.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        1
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "remove",
+      "detail": "Remove and set aside.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        2
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "toast",
+      "detail": "Toast Spices lightly in a dry skillet over medium high heat for 3 minutes.&nbsp; Remove impurities: Rinse bones &amp; brisket then cover with water in large stock pot.",
+      "ingredient_ids": [
+        "764c4b5e",
+        "b9a7e198",
+        "a81332aa",
+        "dcb0ba3f"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": "3 minutes"
+    },
+    {
+      "action": "boil",
+      "detail": "Boil for 5 minutes, then drain.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        4
+      ],
+      "is_header": false,
+      "duration": "5 minutes"
+    },
+    {
+      "action": "rinse",
+      "detail": "Rinse each bone and brisket under tap water.",
+      "ingredient_ids": [
+        "a81332aa",
+        "dcb0ba3f"
+      ],
+      "consumes_steps": [
+        5
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "broth",
+      "detail": "Broth: Wipe pot clean, bring 3.5 litres / 3.75 quarts water to boil.",
+      "ingredient_ids": [
+        "a81332aa"
+      ],
+      "consumes_steps": [
+        6
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add bones and brisket, onion, ginger, Spices Add onion, ginger, Spices, sugar and salt - water should just barely cover everything.",
+      "ingredient_ids": [
+        "24cbcd1a",
+        "764c4b5e",
+        "b9a7e198",
+        "a81332aa",
+        "0d742282",
+        "60003bbe",
+        "dcb0ba3f"
+      ],
+      "consumes_steps": [
+        7
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "cover",
+      "detail": "Cover with lid, simmer 3 hours.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        8
+      ],
+      "is_header": false,
+      "duration": "3 hours"
+    },
+    {
+      "action": "remove",
+      "detail": "Remove brisket (should be fall-apart tender), cool then refrigerate for later.",
+      "ingredient_ids": [
+        "dcb0ba3f"
+      ],
+      "consumes_steps": [
+        9
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "simmer",
+      "detail": "Simmer remaining soup UNCOVERED for 40 minutes.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        10
+      ],
+      "is_header": false,
+      "duration": "40 minutes"
+    },
+    {
+      "action": "strain",
+      "detail": "Strain broth into another pot, discard bones and spices.",
+      "ingredient_ids": [
+        "764c4b5e",
+        "b9a7e198"
+      ],
+      "consumes_steps": [
+        11
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "should",
+      "detail": "Should be about 2.5 litres / 2.65 quarts (10 cups), if loads more, reduce.",
+      "ingredient_ids": [
+        "a81332aa",
+        "db79a832"
+      ],
+      "consumes_steps": [
+        12
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add fish sauce, adjust salt and sugar if needed.",
+      "ingredient_ids": [
+        "0d742282",
+        "60003bbe",
+        "a506275d"
+      ],
+      "consumes_steps": [
+        13
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "broth",
+      "detail": "Broth should be beefy, fragrant with spices, savoury and barely sweet.",
+      "ingredient_ids": [
+        "764c4b5e"
+      ],
+      "consumes_steps": [
+        14
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "assemble",
+      "detail": "Assemble: Prepare rice noodles per packet, just prior to serving.",
+      "ingredient_ids": [
+        "f7e29f5d"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "place",
+      "detail": "Place noodles in bowl.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        16
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "top",
+      "detail": "Top with raw beef and brisket.",
+      "ingredient_ids": [
+        "6f05b84c",
+        "dcb0ba3f"
+      ],
+      "consumes_steps": [
+        17
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "ladle",
+      "detail": "Ladle over about 400 / 14 oz hot broth - will cook beef to medium rare.",
+      "ingredient_ids": [
+        "6f05b84c"
+      ],
+      "consumes_steps": [
+        18
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "serve",
+      "detail": "Serve with Toppings on the side!",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        19
+      ],
+      "is_header": false,
+      "duration": ""
+    }
+  ],
+  "servings": "6",
+  "source": "https://www.recipetineats.com/vietnamese-pho-recipe/#recipe",
+  "notes": "",
+  "scale_factor": 1.0,
+  "created_at": "2026-08-01T00:26:46.743180+00:00",
+  "original_protein": "/ 3lb beef brisket",
+  "substituted_protein": "beef"
+}
