@@ -1,0 +1,297 @@
+{
+  "id": "13f4ec2b-0011-4098-b973-452e5e07f83c",
+  "title": "Turkey Chili",
+  "ingredients": [
+    {
+      "id": "ddfacf65",
+      "name": "olive oil",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "tbsp",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "c4db2817",
+      "name": "ground turkey, white and dark meat combined",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "lb",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "6c78b0fd",
+      "name": "coarsely chopped onions",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "cups",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "88af918a",
+      "name": "sweet red pepper, cored, deveined and coarsely chopped",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "large",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "53f406f0",
+      "name": "jalapeño, cored, deveined and finely chopped",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "71f94231",
+      "name": "fresh oregano, chopped, or 1 tablespoon dried",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "tbsp",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "6ac3fda1",
+      "name": "bay leaves",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "cc5df024",
+      "name": "chili powder",
+      "quantity": {
+        "amount": 3.0,
+        "unit": "tbsp",
+        "raw": "3",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "1bdaba92",
+      "name": "ground cumin",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "tsp",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "f02c4bf2",
+      "name": "can ned diced tomatoes",
+      "quantity": {
+        "amount": 3.0,
+        "unit": "cups",
+        "raw": "3",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "a56ec5af",
+      "name": "chicken broth, fresh or can ned",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "cups",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "37927571",
+      "name": "Salt and black pepper",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "b63d5ad1",
+      "name": "(15-ounce) cans red kidney beans",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "",
+        "raw": "2",
+        "note": "drained"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "413cad3b",
+      "name": "shredded Cheddar",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "cups",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "7162c85a",
+      "name": "sour cream (optional)",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "cup",
+        "raw": "1",
+        "note": "Sliced lime, for garnish (optional)"
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "heat",
+      "detail": "Heat the oil over high in a large heavy pot and add the turkey meat.",
+      "ingredient_ids": [
+        "ddfacf65",
+        "c4db2817"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "cook",
+      "detail": "Cook until lightly browned, about 5 minutes, chopping down and stirring with the side of a heavy kitchen spoon to break up any lumps.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        0
+      ],
+      "is_header": false,
+      "duration": "5 minutes"
+    },
+    {
+      "action": "add",
+      "detail": "Add the onions, garlic, sweet pepper, celery, jalapeño, oregano, bay leaves, chili powder and cumin.",
+      "ingredient_ids": [
+        "6c78b0fd",
+        "88af918a",
+        "71f94231",
+        "6ac3fda1",
+        "cc5df024",
+        "1bdaba92",
+        "37927571"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "stir",
+      "detail": "Stir to blend well.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        2
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "cook",
+      "detail": "Cook for 5 minutes.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        3
+      ],
+      "is_header": false,
+      "duration": "5 minutes"
+    },
+    {
+      "action": "add",
+      "detail": "Add the tomatoes, chicken broth, salt and pepper to taste.",
+      "ingredient_ids": [
+        "f02c4bf2",
+        "a56ec5af",
+        "37927571"
+      ],
+      "consumes_steps": [
+        4
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "bring",
+      "detail": "Bring to a boil, reduce heat and simmer, stirring occasionally, for 15 minutes.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        5
+      ],
+      "is_header": false,
+      "duration": "15 minutes"
+    },
+    {
+      "action": "add",
+      "detail": "Add the drained beans and cook, stirring occasionally, for 10 minutes longer.",
+      "ingredient_ids": [
+        "b63d5ad1"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": "10 minutes"
+    },
+    {
+      "action": "serve",
+      "detail": "Serve in bowls with Cheddar, and sour cream and lime wedges, if desired.",
+      "ingredient_ids": [
+        "413cad3b",
+        "7162c85a"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    }
+  ],
+  "servings": "6 servings",
+  "source": "https://cooking.nytimes.com/recipes/7985-turkey-chili?unlocked_article_code=1.pU4.g3MU.gqNWAQlUzs27&smid=ck-recipe-iOS-share",
+  "notes": "",
+  "scale_factor": 1.0,
+  "created_at": "2026-08-16T20:34:04.567920+00:00",
+  "original_protein": "ground turkey, white and dark meat combined",
+  "substituted_protein": null
+}
