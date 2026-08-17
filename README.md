@@ -6,7 +6,7 @@ The recipes in this repository are automatically published as a visual recipe li
 
 ## Add a recipe
 
-Add a folder under `recipes/` containing `recipe.json` and, optionally, `recipe.md` and `recipe.pdf`. When the change reaches `main`, GitHub Actions automatically:
+Add a folder under `recipes/` containing `recipe.json` and `recipe.pdf`; `recipe.md` is optional. When the change reaches `main`, GitHub Actions automatically:
 
 1. generates a responsive recipe page;
 2. renders the table portion of `recipe.pdf` into a 1200×630 PNG sharing card, preserving the recipe card's original design and excluding the prose below the table;
