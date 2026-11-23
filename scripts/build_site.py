@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build recipe pages and X preview images from recipe JSON and PDF cards."""
+"""Build the family recipe box site and X preview images from recipe JSON and PDF cards."""
 
 from __future__ import annotations
 
