@@ -4,6 +4,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import html
 import json
 import re
@@ -206,7 +207,7 @@ def page_head(
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,500;0,700;0,800;1,400&family=Caveat:wght@500;700&family=Courier+Prime:wght@400;700&display=swap">
-  <link rel="stylesheet" href="{esc(base_url)}/assets/site.css">
+  <link rel="stylesheet" href="{esc(base_url)}/assets/site.css?v={CSS_VERSION}">
   {structured}
 </head>"""
 
@@ -397,6 +398,9 @@ footer a{color:var(--ink);font-family:var(--typewriter);font-size:15px}
 @media(max-width:760px){html{background-size:44px 44px;font-size:18px}main{padding-top:36px}.handle{display:none}.hero,.recipe{padding-left:24px;padding-right:24px}.hero .printed{margin-left:-24px;margin-right:-24px;padding-left:24px;padding-right:24px}.hero{transform:rotate(-.6deg)}.library-grid,.recipe-grid{grid-template-columns:1fr}.recipe-grid{gap:32px}.box-label{margin-top:64px}.library-card h2{font-size:28px}}
 @media(prefers-reduced-motion:reduce){.library-card{transition:none}.library-grid .library-card:hover{transform:none}}
 """
+
+
+CSS_VERSION = hashlib.sha256(CSS.strip().encode("utf-8")).hexdigest()[:10]
 
 
 def main() -> None:
