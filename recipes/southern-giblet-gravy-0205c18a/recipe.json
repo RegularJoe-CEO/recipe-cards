@@ -1,0 +1,390 @@
+{
+  "id": "0205c18a-74b8-48da-884f-8172cdb91226",
+  "title": "Southern Giblet Gravy",
+  "ingredients": [
+    {
+      "id": "29cc5d8a",
+      "name": "Giblets and neck from 1 turkey or whole chicken",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "534ad6a2",
+      "name": "chicken or turkey broth (divided)",
+      "quantity": {
+        "amount": 4.0,
+        "unit": "cups",
+        "raw": "4",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "ec64f86f",
+      "name": "unsalted butter or turkey drippings",
+      "quantity": {
+        "amount": 4.0,
+        "unit": "tbsp",
+        "raw": "4",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "fa21f592",
+      "name": "all-purpose flour",
+      "quantity": {
+        "amount": 0.25,
+        "unit": "cup",
+        "raw": "1/4",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "3ca671ed",
+      "name": "finely chopped onion",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "cup",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "47087325",
+      "name": "finely chopped celery",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "cup",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "7b1dcbf5",
+      "name": "poultry seasoning",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "tsp",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "b87e44be",
+      "name": "salt (plus more to taste)",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "tsp",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "eac0a549",
+      "name": "ground black pepper",
+      "quantity": {
+        "amount": 0.25,
+        "unit": "tsp",
+        "raw": "1/4",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "bb1b3d11",
+      "name": "hard-boiled eggs (peeled and chopped)",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "3ea650e5",
+      "name": "finely chopped cooked giblets",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "cup",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "12021718",
+      "name": "finely shredded or chopped meat from the cooked neck (optional)",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "cup",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "place",
+      "detail": "Place the giblets and neck in a medium saucepan.",
+      "ingredient_ids": [
+        "29cc5d8a",
+        "12021718"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add 3 cups of the chicken or turkey broth.",
+      "ingredient_ids": [
+        "534ad6a2"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "bring",
+      "detail": "Bring to a boil, then reduce the heat to low.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        1
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "cover",
+      "detail": "Cover and simmer for 45-60 minutes, or until the giblets are tender.",
+      "ingredient_ids": [
+        "29cc5d8a"
+      ],
+      "consumes_steps": [
+        2
+      ],
+      "is_header": false,
+      "duration": "45-60 minutes"
+    },
+    {
+      "action": "remove",
+      "detail": "Remove the giblets and neck from the broth and set aside until cool enough to handle.",
+      "ingredient_ids": [
+        "29cc5d8a",
+        "12021718"
+      ],
+      "consumes_steps": [
+        3
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "reserve",
+      "detail": "Reserve the cooking broth.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        4
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "remove",
+      "detail": "Remove the meat from the neck bones and finely chop or shred it.",
+      "ingredient_ids": [
+        "29cc5d8a",
+        "12021718"
+      ],
+      "consumes_steps": [
+        5
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "discard",
+      "detail": "Discard the bones.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        6
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "melt",
+      "detail": "Melt the butter or turkey drippings in a large skillet or saucepan over medium heat.",
+      "ingredient_ids": [
+        "ec64f86f"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the onion and celery and cook for 4-5 minutes, until tender.",
+      "ingredient_ids": [
+        "3ca671ed",
+        "47087325"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": "4-5 minutes"
+    },
+    {
+      "action": "sprinkle",
+      "detail": "Sprinkle the flour over the vegetables.",
+      "ingredient_ids": [
+        "fa21f592"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "stir",
+      "detail": "Stir until evenly coated.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        10
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "cook",
+      "detail": "Cook for about 2 minutes, stirring frequently, to remove the raw flour taste.",
+      "ingredient_ids": [
+        "fa21f592"
+      ],
+      "consumes_steps": [
+        11
+      ],
+      "is_header": false,
+      "duration": "2 minutes"
+    },
+    {
+      "action": "gradually",
+      "detail": "Gradually whisk in 3 cups of the reserved giblet broth.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        12
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "you",
+      "detail": "If you don't have a full 3 cups remaining, add enough of the reserved 1 cup of broth to make up the difference.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        13
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the poultry seasoning, salt, and black pepper.",
+      "ingredient_ids": [
+        "7b1dcbf5",
+        "b87e44be",
+        "eac0a549"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "bring",
+      "detail": "Bring the gravy to a gentle simmer and cook for 5-10 minutes, stirring frequently, until thickened.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        15
+      ],
+      "is_header": false,
+      "duration": "5-10 minutes"
+    },
+    {
+      "action": "stir in",
+      "detail": "Stir in the chopped giblets, neck meat, and chopped hard-boiled eggs.",
+      "ingredient_ids": [
+        "29cc5d8a",
+        "bb1b3d11",
+        "12021718"
+      ],
+      "consumes_steps": [
+        16
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "simmer",
+      "detail": "Simmer for another 2-3 minutes, just until everything is heated through.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        17
+      ],
+      "is_header": false,
+      "duration": "2-3 minutes"
+    },
+    {
+      "action": "taste",
+      "detail": "Taste and adjust the salt and pepper as needed.",
+      "ingredient_ids": [
+        "b87e44be",
+        "eac0a549"
+      ],
+      "consumes_steps": [
+        18
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "gravy",
+      "detail": "If the gravy becomes too thick, gradually stir in additional broth until it reaches your desired consistency.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        19
+      ],
+      "is_header": false,
+      "duration": ""
+    }
+  ],
+  "servings": "12",
+  "source": "https://cookingbride.com/giblet-gravy/",
+  "notes": "",
+  "scale_factor": 1.0,
+  "created_at": "2026-11-23T23:35:46.107286+00:00",
+  "original_protein": "Giblets and neck from 1 turkey or whole chicken",
+  "substituted_protein": null
+}
