@@ -1,0 +1,117 @@
+{
+  "id": "4e5451c7-5893-4fb4-b8c1-d2c65d127035",
+  "title": "Frozen Fruit Salad",
+  "ingredients": [
+    {
+      "id": "1ab8ca69",
+      "name": "drained",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "cup",
+        "raw": "1",
+        "note": "crushed pineapple"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "47eb7b81",
+      "name": "sized bananas diced",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "medium",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "749c110d",
+      "name": "T lemon juice",
+      "quantity": {
+        "amount": 2.5,
+        "unit": "",
+        "raw": "2 1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "b5c90ac9",
+      "name": "t salt",
+      "quantity": {
+        "amount": 0.125,
+        "unit": "",
+        "raw": "1/8",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "54c6247d",
+      "name": "sour cream",
+      "quantity": {
+        "amount": 2.5,
+        "unit": "cup",
+        "raw": "2 1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "89cd3da7",
+      "name": "chopped maraschino cherries",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "cup",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "48b9c3f8",
+      "name": "chopped walnuts or pecans (optional)",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "cup",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "mix",
+      "detail": "Mix everything together in a large bowl.",
+      "ingredient_ids": [],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "spoon",
+      "detail": "Spoon into 18 paper cups that have been place into muffin pans. Freeze.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        0
+      ],
+      "is_header": false,
+      "duration": ""
+    }
+  ],
+  "servings": "18",
+  "source": "https://thisishowicook.com/frozen-fruit-salad-recipe/",
+  "notes": "Once these are frozen I take them out of the pans and put them into a giant zip lock bag and store them in the freezer. Remember to take them out about 20 minutes before serving, so they aren't hard as rocks! Also don't stack these or they may melt together!",
+  "scale_factor": 1.0,
+  "created_at": "2026-11-23T21:54:46.823302+00:00",
+  "original_protein": null,
+  "substituted_protein": null
+}
