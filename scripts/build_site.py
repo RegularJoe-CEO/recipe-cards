@@ -153,13 +153,13 @@ def render_social_card(pdf_path: Path, destination: Path) -> None:
     table = crop_to_table(page)
     table.thumbnail((1140, 570), Image.Resampling.LANCZOS)
 
-    canvas = Image.new("RGB", (1200, 630), (247, 243, 236))
+    canvas = Image.new("RGB", (1200, 630), (255, 255, 255))
     x = (canvas.width - table.width) // 2
     y = (canvas.height - table.height) // 2
 
     shadow = Image.new("RGBA", canvas.size, (0, 0, 0, 0))
     shadow_draw = ImageDraw.Draw(shadow)
-    shadow_draw.rounded_rectangle((x - 8, y + 5, x + table.width + 8, y + table.height + 18), radius=10, fill=(35, 28, 22, 72))
+    shadow_draw.rounded_rectangle((x - 8, y + 5, x + table.width + 8, y + table.height + 18), radius=10, fill=(29, 42, 68, 60))
     shadow = shadow.filter(ImageFilter.GaussianBlur(14))
     canvas = Image.alpha_composite(canvas.convert("RGBA"), shadow).convert("RGB")
     canvas.paste(table, (x, y))
@@ -311,8 +311,6 @@ def build_index(recipes: list[tuple[str, dict[str, Any]]], base_url: str) -> Non
           <p class="meta">{esc(' · '.join(meta))}</p>
           <img class="snapshot" src="{esc(base_url)}/assets/cards/{esc(slug)}.png" width="1200" height="630" loading="lazy" alt="Recipe table for {esc(title)}">
         </a></li>""")
-    count = len(recipes)
-    count_label = f"{count} recipe{'s' if count != 1 else ''} in the box"
     head = page_head(SITE_NAME, description, f"{base_url}/", default_image, base_url)
     body = f"""
 <body>
@@ -321,7 +319,7 @@ def build_index(recipes: list[tuple[str, dict[str, Any]]], base_url: str) -> Non
     <section class="index-card hero">
       <p class="printed">From the kitchen of <span class="hand">{esc(KITCHEN_OF)}</span></p>
       <h1><span class="h1-printed">{esc(TAGLINE_PRINTED)}</span> <span class="hand">{esc(TAGLINE_HANDWRITTEN)}</span></h1>
-      <p class="hero-note">{esc(count_label)}. Pull one out, cook it, and make it yours.</p>
+      <p class="hero-note">Pull out a card, cook it, and make it yours.</p>
     </section>
     <h2 class="box-label hand">What's in the box</h2>
     <ul class="library-grid">{''.join(cards)}</ul>
@@ -333,69 +331,79 @@ def build_index(recipes: list[tuple[str, dict[str, Any]]], base_url: str) -> Non
 
 
 CSS = r"""
-:root{--ink:#22314a;--typed:#3d3a36;--muted:#6e6862;--tomato:#bf3b29;--rule:#c4dbec;--redline:#e2867d;--card:#fffefa;--cloth:#fcfaf6;--gap:36px;--hand:"Caveat","Bradley Hand","Segoe Print",cursive;--serif:"Alegreya",Georgia,serif;--typewriter:"Courier Prime","Courier New",monospace}
+:root{--ink:#1d2a44;--typed:#2e3442;--muted:#5a6478;--red:#e0382c;--red-dark:#b8281e;--sun:#ffc83d;--leaf:#2fa84f;--sky:#2b8be0;--rule:#bfdaf3;--redline:#f08a82;--card:#fff;--gap:36px;--hand:"Caveat","Bradley Hand","Segoe Print",cursive;--serif:"Alegreya",Georgia,serif;--typewriter:"Courier Prime","Courier New",monospace}
 *{box-sizing:border-box}
-html{background-color:var(--cloth);background-image:linear-gradient(90deg,rgba(191,59,41,.06) 50%,transparent 50%),linear-gradient(rgba(191,59,41,.06) 50%,transparent 50%);background-size:64px 64px;color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.55}
+html{background-color:#fff;background-image:linear-gradient(90deg,rgba(224,56,44,.13) 50%,transparent 50%),linear-gradient(rgba(224,56,44,.13) 50%,transparent 50%);background-size:64px 64px;color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.55}
 body{margin:0}
 a{color:inherit}
-:focus-visible{border-radius:3px;outline:3px solid var(--tomato);outline-offset:4px}
+:focus-visible{border-radius:3px;outline:3px solid var(--sky);outline-offset:4px}
 .hand{font-family:var(--hand);font-weight:700}
-.site-header{align-items:baseline;background:var(--card);border-bottom:1px solid #ebe3d8;display:flex;justify-content:space-between;padding:16px max(24px,calc((100vw - 1120px)/2))}
-.brand{font-size:23px;font-weight:800;letter-spacing:-.01em;text-decoration:none}
-.handle{color:var(--muted);font-family:var(--typewriter);font-size:14px}
-main{margin:auto;max-width:1120px;padding:56px 24px 40px}
-.index-card{background-color:var(--card);border-radius:4px;box-shadow:0 1px 1px rgba(42,31,20,.08),0 18px 36px -18px rgba(42,31,20,.38);color:var(--ink);display:block;position:relative}
+.site-header{align-items:baseline;background:var(--red);box-shadow:0 3px 0 var(--sun);display:flex;justify-content:space-between;padding:16px max(24px,calc((100vw - 1120px)/2));position:relative;z-index:1}
+.brand{color:#fff;font-size:25px;font-weight:800;letter-spacing:-.01em;text-decoration:none}
+.handle{color:#fff;font-family:var(--typewriter);font-size:14px;opacity:.9}
+main{margin:auto;max-width:1120px;padding:64px 24px 40px}
+.index-card{background-color:var(--card);border-radius:6px;box-shadow:0 1px 2px rgba(29,42,68,.12),0 20px 40px -18px rgba(29,42,68,.35);color:var(--ink);display:block;position:relative}
 .printed{border-bottom:2px solid var(--redline);color:var(--muted);font-family:var(--typewriter);font-size:13px;letter-spacing:.08em;margin:0;padding-bottom:10px;text-transform:uppercase}
-.printed .hand{color:var(--ink);font-size:28px;letter-spacing:0;line-height:1;margin-left:6px;text-transform:none}
-/* hero: the note on the top card */
-.hero{background-image:repeating-linear-gradient(to bottom,transparent 0 calc(var(--gap) - 1px),var(--rule) calc(var(--gap) - 1px) var(--gap));background-position:0 6px;margin:8px auto 0;max-width:980px;padding:30px 56px 34px;transform:rotate(-1.2deg)}
-.hero .printed{background:var(--card);margin:-30px -56px 0;padding:30px 56px 12px}
+.printed .hand{color:var(--sky);font-size:30px;letter-spacing:0;line-height:1;margin-left:6px;text-transform:none}
+/* hero: the note on the top card, taped down */
+.hero{background-image:repeating-linear-gradient(to bottom,transparent 0 calc(var(--gap) - 1px),var(--rule) calc(var(--gap) - 1px) var(--gap));background-position:0 6px;margin:8px auto 0;max-width:980px;padding:30px 56px 40px;transform:rotate(-1.2deg)}
+.hero::before,.hero::after{background:rgba(255,200,61,.85);content:"";height:34px;position:absolute;top:-14px;width:130px}
+.hero::before{left:-22px;transform:rotate(-28deg)}
+.hero::after{right:-22px;transform:rotate(26deg)}
+.hero .printed{background:var(--card);border-radius:6px 6px 0 0;margin:-30px -56px 0;padding:30px 56px 12px}
 .hero h1{font-weight:400;margin:18px 0 0}
 .h1-printed{display:block;font-family:var(--serif);font-size:clamp(32px,4.4vw,52px);font-weight:800;letter-spacing:-.02em;line-height:1.15}
-.hero h1 .hand{color:var(--tomato);display:block;font-size:clamp(44px,5.6vw,70px);line-height:1.05;margin-top:18px;transform:rotate(-2deg);transform-origin:left center}
-.hero-note{color:var(--typed);font-family:var(--typewriter);font-size:16px;line-height:var(--gap);margin:18px 0 0}
-.box-label{color:var(--ink);font-size:44px;font-weight:700;margin:88px 0 26px;text-align:center}
-/* recipe cards in the box */
-.library-grid{display:grid;gap:44px 40px;grid-template-columns:repeat(2,minmax(0,1fr));list-style:none;margin:0;padding:0}
-.library-card{padding:22px 26px 26px;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease}
+.hero h1 .hand{color:var(--red);display:block;font-size:clamp(44px,5.6vw,70px);line-height:1.05;margin-top:18px;transform:rotate(-2deg);transform-origin:left center}
+.hero-note{color:var(--typed);font-family:var(--typewriter);font-size:16px;line-height:var(--gap);margin:22px 0 0}
+.box-label{background:var(--card);border-radius:999px;box-shadow:0 6px 18px -8px rgba(29,42,68,.3);color:var(--ink);font-size:42px;font-weight:700;line-height:1;margin:96px auto 44px;padding:12px 36px 16px;text-align:center;width:max-content;max-width:100%}
+/* recipe cards in the box, each with a colored divider tab */
+.library-grid{display:grid;gap:60px 40px;grid-template-columns:repeat(2,minmax(0,1fr));list-style:none;margin:0;padding:0}
+.library-grid li{--tab:var(--red)}
+.library-grid li:nth-child(4n+2){--tab:var(--sun)}
+.library-grid li:nth-child(4n+3){--tab:var(--leaf)}
+.library-grid li:nth-child(4n){--tab:var(--sky)}
+.library-card{border-top:6px solid var(--tab);padding:22px 26px 26px;text-decoration:none;transition:transform .25s ease,box-shadow .25s ease}
+.library-card::before{background:var(--tab);border-radius:8px 8px 0 0;content:"";height:18px;left:24px;position:absolute;top:-22px;width:110px}
 .library-grid li:nth-child(4n+1) .library-card{transform:rotate(-.9deg)}
 .library-grid li:nth-child(4n+2) .library-card{transform:rotate(.7deg)}
+.library-grid li:nth-child(4n+2) .library-card::before{left:auto;right:24px}
 .library-grid li:nth-child(4n+3) .library-card{transform:rotate(.5deg)}
+.library-grid li:nth-child(4n+3) .library-card::before{left:calc(50% - 55px)}
 .library-grid li:nth-child(4n) .library-card{transform:rotate(-.6deg)}
-.library-grid .library-card:hover,.library-grid .library-card:focus-visible{box-shadow:0 2px 2px rgba(42,31,20,.08),0 30px 50px -20px rgba(42,31,20,.45);transform:rotate(0) translateY(-6px)}
+.library-grid .library-card:hover,.library-grid .library-card:focus-visible{box-shadow:0 2px 3px rgba(29,42,68,.12),0 32px 52px -20px rgba(29,42,68,.45);transform:rotate(0) translateY(-6px)}
 .library-card h2{border-bottom:2px solid var(--redline);font-size:32px;font-weight:800;letter-spacing:-.015em;line-height:1.15;margin:0;padding-bottom:10px}
 .library-card .meta{border-bottom:1px solid var(--rule);color:var(--typed);font-family:var(--typewriter);font-size:15px;line-height:var(--gap);margin:0 0 18px}
-.snapshot{border:1px solid #ece4d8;border-radius:2px;display:block;height:auto;width:100%}
+.snapshot{border:1px solid #e6ebf2;border-radius:4px;display:block;height:auto;width:100%}
 /* single recipe */
-.back{color:var(--ink);display:inline-block;font-family:var(--typewriter);font-size:15px;margin-bottom:28px;text-decoration:none}
-.back:hover{text-decoration:underline}
-.recipe{padding:30px 56px 40px}
-.recipe .card-top h1{font-size:clamp(44px,6.5vw,76px);font-weight:800;letter-spacing:-.025em;line-height:1.02;margin:26px 0 14px}
-.facts{display:flex;flex-wrap:wrap;gap:6px 26px;list-style:none;margin:0;padding:0}
-.facts li{color:var(--typed);font-family:var(--typewriter);font-size:15px}
-.facts li+li::before{color:var(--redline);content:"\2022";margin:0 12px 0 -18px}
+.back{background:var(--card);border-radius:999px;box-shadow:0 4px 12px -6px rgba(29,42,68,.35);color:var(--ink);display:inline-block;font-family:var(--typewriter);font-size:15px;margin-bottom:36px;padding:8px 18px;text-decoration:none}
+.back:hover{color:var(--red)}
+.recipe{border-top:6px solid var(--red);padding:30px 56px 40px}
+.recipe::before{background:var(--red);border-radius:8px 8px 0 0;content:"";height:18px;left:48px;position:absolute;top:-22px;width:130px}
+.recipe .card-top h1{font-size:clamp(44px,6.5vw,76px);font-weight:800;letter-spacing:-.025em;line-height:1.02;margin:26px 0 16px}
+.facts{display:flex;flex-wrap:wrap;gap:8px;list-style:none;margin:0;padding:0}
+.facts li{background:#fff4d1;border-radius:999px;color:var(--typed);font-family:var(--typewriter);font-size:15px;padding:4px 14px}
 .recipe-grid{display:grid;gap:56px;grid-template-columns:minmax(240px,.85fr) minmax(320px,1.4fr);margin-top:40px}
-.recipe-grid h2{color:var(--tomato);font-size:38px;line-height:1;margin:0 0 6px}
+.recipe-grid h2{color:var(--red);font-size:40px;line-height:1;margin:0 0 6px}
+.recipe-grid .ingredients-panel h2{color:var(--leaf)}
 .ingredients,.steps{list-style:none;margin:0;padding:0}
 .ingredients li{border-bottom:1px solid var(--rule);color:var(--typed);font-family:var(--typewriter);font-size:16px;line-height:1.45;padding:9px 0}
 .steps li{border-bottom:1px solid var(--rule);display:grid;gap:14px;grid-template-columns:34px 1fr;padding:12px 0}
 .steps p{line-height:1.55;margin:0}
-.step-number{color:var(--tomato);font-family:var(--hand);font-size:30px;font-weight:700;line-height:1}
+.step-number{color:var(--red);font-family:var(--hand);font-size:30px;font-weight:700;line-height:1}
 .source{color:var(--muted);font-size:16px;font-style:italic;margin:34px 0 0}
-.glance{margin:80px auto 0;max-width:900px;text-align:center}
-.glance h2{font-size:44px;line-height:1;margin:0 0 8px}
+.glance{background:var(--card);border-radius:6px;box-shadow:0 20px 40px -18px rgba(29,42,68,.35);margin:72px auto 0;max-width:940px;padding:36px 40px 40px;text-align:center}
+.glance h2{color:var(--sky);font-size:44px;line-height:1;margin:0 0 8px}
 .glance>p{color:var(--muted);margin:0 0 28px}
-.glance .snapshot{background:var(--card);box-shadow:0 18px 36px -18px rgba(42,31,20,.38);transform:rotate(.6deg)}
 .actions{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:30px}
-.button{background:var(--tomato);border:2px solid var(--tomato);border-radius:999px;color:#fff;font-size:17px;font-weight:700;padding:11px 22px;text-decoration:none}
-.button:hover{background:#a3301f;border-color:#a3301f}
-.button.secondary{background:var(--card);color:var(--tomato)}
-.button.secondary:hover{background:#fff3ef}
-footer{color:var(--muted);font-size:16px;margin:auto;max-width:1120px;padding:64px 24px 72px;text-align:center}
+.button{background:var(--red);border:2px solid var(--red);border-radius:999px;color:#fff;font-size:17px;font-weight:700;padding:11px 22px;text-decoration:none}
+.button:hover{background:var(--red-dark);border-color:var(--red-dark)}
+.button.secondary{background:#fff;color:var(--red)}
+.button.secondary:hover{background:#fff0ee}
+footer{background:var(--red);box-shadow:0 -3px 0 var(--sun);color:#fff;font-size:16px;margin-top:72px;padding:40px 24px 48px;text-align:center}
 footer p{margin:0 0 6px}
-footer .hand{color:var(--tomato);font-size:34px;line-height:1.1}
-footer a{color:var(--ink);font-family:var(--typewriter);font-size:15px}
-@media(max-width:760px){html{background-size:44px 44px;font-size:18px}main{padding-top:36px}.handle{display:none}.hero,.recipe{padding-left:24px;padding-right:24px}.hero .printed{margin-left:-24px;margin-right:-24px;padding-left:24px;padding-right:24px}.hero{transform:rotate(-.6deg)}.library-grid,.recipe-grid{grid-template-columns:1fr}.recipe-grid{gap:32px}.box-label{margin-top:64px}.library-card h2{font-size:28px}}
+footer .hand{color:#fff;font-size:38px;line-height:1.1}
+footer a{color:#fff;font-family:var(--typewriter);font-size:15px}
+@media(max-width:760px){html{background-size:44px 44px;font-size:18px}main{padding-top:44px}.handle{display:none}.hero,.recipe{padding-left:24px;padding-right:24px}.hero .printed{margin-left:-24px;margin-right:-24px;padding-left:24px;padding-right:24px}.hero{transform:rotate(-.6deg)}.hero::before,.hero::after{width:90px}.library-grid,.recipe-grid{grid-template-columns:1fr}.recipe-grid{gap:32px}.box-label{font-size:34px;margin-top:72px}.library-card h2{font-size:28px}.glance{padding:28px 20px 32px}}
 @media(prefers-reduced-motion:reduce){.library-card{transition:none}.library-grid .library-card:hover{transform:none}}
 """
 
