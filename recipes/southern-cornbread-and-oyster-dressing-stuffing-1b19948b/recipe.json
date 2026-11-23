@@ -1,0 +1,457 @@
+{
+  "id": "1b19948b-a52a-45e0-b5a4-d41d472b764d",
+  "title": "Southern Cornbread and Oyster Dressing (Stuffing)",
+  "ingredients": [
+    {
+      "id": "599aacdd",
+      "name": "(2 sticks) butter",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "cup",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "6b49d808",
+      "name": "onion",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "medium",
+        "raw": "1",
+        "note": "chopped"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "89f62394",
+      "name": "ribs celery",
+      "quantity": {
+        "amount": 3.0,
+        "unit": "",
+        "raw": "3",
+        "note": "chopped"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "c9a07773",
+      "name": "chopped green bell pepper",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "tbsp",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "497e966f",
+      "name": "cooked, crumbled cornbread",
+      "quantity": {
+        "amount": 6.0,
+        "unit": "cups",
+        "raw": "6",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "cd07247a",
+      "name": "dry, toasted bread, crumbled (toasted white bread, leftover biscuits, or rolls)",
+      "quantity": {
+        "amount": 6.0,
+        "unit": "cups",
+        "raw": "6",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "63fa5fe8",
+      "name": "salt",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "tsp",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "5c33d28b",
+      "name": "Creole or Cajun seasoning, or to taste, optional",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "tsp",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "aa83c2f1",
+      "name": "freshly cracked black pepper",
+      "quantity": {
+        "amount": 0.25,
+        "unit": "tsp",
+        "raw": "1/4",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "74c9a3aa",
+      "name": "sage or Bell's seasoning, or to taste",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "tsp",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "63a17e7a",
+      "name": "poultry seasoning",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "tsp",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "820f2e3f",
+      "name": "to 6 cups turkey or chicken stock",
+      "quantity": {
+        "amount": 4.0,
+        "unit": "",
+        "raw": "4",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "9fde14ef",
+      "name": "eggs, beaten (or 3 raw, 2 boiled and chopped)",
+      "quantity": {
+        "amount": 5.0,
+        "unit": "",
+        "raw": "5",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "a280cb84",
+      "name": "quart oysters",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "",
+        "raw": "1",
+        "note": "liquid reserved"
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "toast",
+      "detail": "Toast the bread in a toaster or in the oven.",
+      "ingredient_ids": [
+        "cd07247a"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "remove",
+      "detail": "Remove and set aside to cool.",
+      "ingredient_ids": [
+        "820f2e3f"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "make",
+      "detail": "Make a pan of cornbread, remove and set aside uncovered to cool completely.",
+      "ingredient_ids": [
+        "497e966f",
+        "820f2e3f"
+      ],
+      "consumes_steps": [
+        1
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "you",
+      "detail": "You want the breads to be very dry.",
+      "ingredient_ids": [
+        "cd07247a",
+        "820f2e3f"
+      ],
+      "consumes_steps": [
+        2
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "ready",
+      "detail": "When ready to bake dressing, preheat oven to 350 degrees F.",
+      "ingredient_ids": [
+        "820f2e3f"
+      ],
+      "consumes_steps": [],
+      "is_header": true,
+      "duration": ""
+    },
+    {
+      "action": "butter",
+      "detail": "Butter a 9 x 13-inch pan or spray with non-stick spray.",
+      "ingredient_ids": [
+        "599aacdd"
+      ],
+      "consumes_steps": [],
+      "is_header": true,
+      "duration": ""
+    },
+    {
+      "action": "melt",
+      "detail": "Melt the butter in a skillet over medium heat.",
+      "ingredient_ids": [
+        "599aacdd"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "sauté",
+      "detail": "Saute the onion, celery and bell pepper.",
+      "ingredient_ids": [
+        "6b49d808",
+        "89f62394",
+        "c9a07773"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the salt, Creole or Cajun seasoning, pepper, sage or Bell's seasoning and poultry seasoning.",
+      "ingredient_ids": [
+        "c9a07773",
+        "63fa5fe8",
+        "5c33d28b",
+        "aa83c2f1",
+        "74c9a3aa",
+        "63a17e7a"
+      ],
+      "consumes_steps": [
+        7
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "continue",
+      "detail": "Continue cooking and stirring for 2 minutes.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        8
+      ],
+      "is_header": false,
+      "duration": "2 minutes"
+    },
+    {
+      "action": "set aside",
+      "detail": "Set aside to cool.",
+      "ingredient_ids": [
+        "820f2e3f"
+      ],
+      "consumes_steps": [
+        9
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "crumble",
+      "detail": "Crumble the cornbread into a large bowl.",
+      "ingredient_ids": [
+        "497e966f"
+      ],
+      "consumes_steps": [
+        10
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the bread and toss.",
+      "ingredient_ids": [
+        "cd07247a"
+      ],
+      "consumes_steps": [
+        11
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the sauteed veggies, scraping out all of the butter; stir.",
+      "ingredient_ids": [
+        "599aacdd"
+      ],
+      "consumes_steps": [
+        12
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "pour",
+      "detail": "Pour in 2 cups of the broth and toss.",
+      "ingredient_ids": [
+        "820f2e3f"
+      ],
+      "consumes_steps": [
+        13
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "taste",
+      "detail": "Taste and adjust seasoning as needed.",
+      "ingredient_ids": [
+        "5c33d28b",
+        "74c9a3aa"
+      ],
+      "consumes_steps": [
+        14
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the beaten eggs; stir.",
+      "ingredient_ids": [
+        "9fde14ef"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "kitchen",
+      "detail": "Using a pair of kitchen shears, roughly chop the oysters.",
+      "ingredient_ids": [
+        "a280cb84"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the oysters, with their juices, to the cornbread mixture.",
+      "ingredient_ids": [
+        "497e966f",
+        "820f2e3f",
+        "a280cb84"
+      ],
+      "consumes_steps": [
+        17
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "where",
+      "detail": "This is where you fix the consistency.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        18
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "you",
+      "detail": "If you want a fluffy stuffing, you'll use less stock.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        19
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "you",
+      "detail": "If you prefer a wetter stuffing, add additional broth as needed to reach desired consistency, taking care not to get too soupy!",
+      "ingredient_ids": [
+        "820f2e3f"
+      ],
+      "consumes_steps": [
+        20
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "spoon",
+      "detail": "Lightly spoon into the prepared casserole dish, but do not pack in.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        21
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "bake",
+      "detail": "Bake at 350 degrees F for 45 minutes.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        22
+      ],
+      "is_header": false,
+      "duration": "45 minutes"
+    }
+  ],
+  "servings": "8 to 10 side servings",
+  "source": "https://www.deepsouthdish.com/2009/11/southern-cornbread-and-oyster-dressing.html",
+  "notes": "This can be done in advance. For a moister stuffing, baked covered. For a drier stuffing with a crunchy top, bake uncovered.",
+  "scale_factor": 1.0,
+  "created_at": "2026-11-23T23:39:30.295711+00:00",
+  "original_protein": "to 6 cups turkey or chicken stock",
+  "substituted_protein": null
+}
