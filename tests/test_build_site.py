@@ -32,7 +32,7 @@ class BuildSiteTests(unittest.TestCase):
         recipe = {"title": "Masa Biscuits", "ingredients": [{}, {}], "steps": [{"detail": "Mix."}]}
         self.assertEqual(
             build_site.recipe_description(recipe),
-            "Make Masa Biscuits from its visual recipe card: 2 ingredients and 1 practical step.",
+            "Masa Biscuits, straight from our family recipe box: 2 ingredients and 1 simple step.",
         )
 
     def test_pdf_table_becomes_social_image(self):
