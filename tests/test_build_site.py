@@ -74,6 +74,18 @@ class BuildSiteTests(unittest.TestCase):
             self.assertIn("https://example.com/recipes/assets/cards/masa-biscuits.png", markup)
             self.assertIn('"@type": "Recipe"', markup)
 
+    def test_recipe_credit_replaces_kitchen_line(self):
+        recipe = {"title": "Cornbread Dressing", "ingredients": [], "steps": [{"detail": "Bake."}]}
+        with tempfile.TemporaryDirectory() as temporary:
+            page = Path(temporary) / "index.html"
+            build_site.build_recipe_page(recipe, "plain", "https://example.com", page)
+            self.assertIn("From the kitchen of", page.read_text(encoding="utf-8"))
+            recipe["credit"] = "From the Boyd family kitchen"
+            build_site.build_recipe_page(recipe, "boyd", "https://example.com", page)
+            markup = page.read_text(encoding="utf-8")
+            self.assertIn("From the Boyd family kitchen", markup)
+            self.assertNotIn("From the kitchen of", markup)
+
 
 if __name__ == "__main__":
     unittest.main()

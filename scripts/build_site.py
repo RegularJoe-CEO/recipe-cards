@@ -261,6 +261,13 @@ def build_recipe_page(recipe: dict[str, Any], slug: str, base_url: str, output: 
     if source and urlparse(source).scheme in {"http", "https"}:
         source_html = f'<p class="source">Adapted from <a href="{esc(source)}" rel="nofollow">the original recipe</a>.</p>'
 
+    # Optional per-recipe credit in recipe.json, e.g. "From the Boyd family kitchen"
+    credit = clean_text(recipe.get("credit"))
+    if credit:
+        kitchen_html = f'<p class="printed credit"><span class="hand">{esc(credit)}</span></p>'
+    else:
+        kitchen_html = f'<p class="printed">From the kitchen of <span class="hand">{esc(KITCHEN_OF)}</span></p>'
+
     head = page_head(f"{title} | {SITE_NAME}", description, page_url, image_url, base_url, json_ld=json_ld)
     body = f"""
 <body>
@@ -269,7 +276,7 @@ def build_recipe_page(recipe: dict[str, Any], slug: str, base_url: str, output: 
     <a class="back" href="{esc(base_url)}/"><span aria-hidden="true">&larr;</span> Back to the recipe box</a>
     <article class="index-card recipe">
       <header class="card-top">
-        <p class="printed">From the kitchen of <span class="hand">{esc(KITCHEN_OF)}</span></p>
+        {kitchen_html}
         <h1>{esc(title)}</h1>
         <ul class="facts">{facts_html}</ul>
       </header>
