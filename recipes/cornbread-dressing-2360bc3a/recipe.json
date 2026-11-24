@@ -1,0 +1,301 @@
+{
+  "id": "2360bc3a-4791-4cc4-8202-22bbf75c1db8",
+  "title": "Cornbread Dressing",
+  "ingredients": [
+    {
+      "id": "c9550f83",
+      "name": "Martha White Yellow Cornbread Mix",
+      "quantity": {
+        "amount": 8.0,
+        "unit": "pkg",
+        "raw": "8",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "72defecc",
+      "name": "biscuits",
+      "quantity": {
+        "amount": 11.0,
+        "unit": "",
+        "raw": "10-12",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "95417315",
+      "name": "chicken (a fat one)",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "bfce841f",
+      "name": "chicken broth",
+      "quantity": {
+        "amount": 2.5,
+        "unit": "quarts",
+        "raw": "2-3",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "143999e2",
+      "name": "onions",
+      "quantity": {
+        "amount": 1.5,
+        "unit": "cups",
+        "raw": "1-2",
+        "note": "chopped"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "55424852",
+      "name": "celery",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "cup",
+        "raw": "1",
+        "note": "chopped"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "e0912c9c",
+      "name": "apple",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "small",
+        "raw": "1",
+        "note": "chopped"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "0ceebe1a",
+      "name": "butter",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "stick",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "756ffbd3",
+      "name": "sweet corn (optional)",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "f62f336f",
+      "name": "sage to taste",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "dfc7bc63",
+      "name": "pepper to taste",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "4d4f80b0",
+      "name": "salt to taste",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "f9a2c356",
+      "name": "eggs",
+      "quantity": {
+        "amount": 11.0,
+        "unit": "",
+        "raw": "10-12",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "make",
+      "detail": "Make the cornbread according to the package directions.",
+      "ingredient_ids": [
+        "c9550f83"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "cook",
+      "detail": "Cook the chicken in the chicken broth.",
+      "ingredient_ids": [
+        "95417315",
+        "bfce841f"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "debone",
+      "detail": "Debone the chicken and save all the broth.",
+      "ingredient_ids": [
+        "95417315"
+      ],
+      "consumes_steps": [
+        1
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "sauté",
+      "detail": "Sauté the onions, celery, apple and sweet corn (optional) in the stick of butter.",
+      "ingredient_ids": [
+        "143999e2",
+        "55424852",
+        "e0912c9c",
+        "0ceebe1a",
+        "756ffbd3"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "crumble",
+      "detail": "Crumble the cornbread and biscuits into a big pot.",
+      "ingredient_ids": [
+        "c9550f83",
+        "72defecc"
+      ],
+      "consumes_steps": [
+        3
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "mix",
+      "detail": "Mix in the onion mixture.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        4
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "pour",
+      "detail": "Pour all the chicken broth into the pot and add the deboned chicken.",
+      "ingredient_ids": [
+        "95417315",
+        "bfce841f"
+      ],
+      "consumes_steps": [
+        5
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "mix",
+      "detail": "Combine everything and stir it up real good until smooth.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        6
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the eggs to the mixture one at a time and mix well.",
+      "ingredient_ids": [
+        "f9a2c356"
+      ],
+      "consumes_steps": [
+        7
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "stir in",
+      "detail": "Stir in salt, pepper and sage to taste.",
+      "ingredient_ids": [
+        "f62f336f",
+        "dfc7bc63",
+        "4d4f80b0"
+      ],
+      "consumes_steps": [
+        8
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "bake",
+      "detail": "Bake at 325°F until done, about 30-45 minutes.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        9
+      ],
+      "is_header": false,
+      "duration": "30-45 minutes"
+    }
+  ],
+  "servings": null,
+  "source": "Boyd family kitchen",
+  "notes": "",
+  "scale_factor": 1.0,
+  "created_at": "2026-11-24T19:09:27.622710+00:00",
+  "original_protein": "chicken (a fat one)",
+  "substituted_protein": null,
+  "credit": "From the Boyd family kitchen"
+}
