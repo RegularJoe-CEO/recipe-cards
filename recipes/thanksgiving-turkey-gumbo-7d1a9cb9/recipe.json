@@ -1,0 +1,460 @@
+{
+  "id": "7d1a9cb9-fbea-4066-a790-3bd70c1c2789",
+  "title": "Thanksgiving Turkey Gumbo",
+  "ingredients": [
+    {
+      "id": "d9e94a26",
+      "name": "turkey bones, cartilage, uncooked gizzards, liver, neck, wing tips and skin scraps",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "43942bea",
+      "name": "water",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "98a83f1a",
+      "name": "oil (Missy uses EVOO)",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "equal parts with the flour"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "914956ea",
+      "name": "all-purpose flour",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "equal parts with the oil"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "f889cb76",
+      "name": "celery, including leafy greens",
+      "quantity": {
+        "amount": 2.5,
+        "unit": "ribs",
+        "raw": "2-3",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "f65e3f3a",
+      "name": "medium or medium-large yellow onion",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "983e5d6a",
+      "name": "leftover turkey meat",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "f43be4a3",
+      "name": "salt",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "to taste"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "eb44ace2",
+      "name": "pepper",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "to taste"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "f8791c11",
+      "name": "McIlhenny Tabasco sauce or Louisiana hot sauce",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "to taste"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "4f854751",
+      "name": "young tender okra, tops discarded, sliced 1/2 inch to 1 inch",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "5c1382c6",
+      "name": "tomatoes (fresh and crushed, or canned)",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "8f36e827",
+      "name": "cooked rice",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "for serving"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "2790b738",
+      "name": "filé powder (optional)",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "for serving"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "f10084c1",
+      "name": "green onions",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "for serving"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "ff027f0e",
+      "name": "French baguette",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "for serving"
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "5767c211",
+      "name": "butter",
+      "quantity": {
+        "amount": null,
+        "unit": "",
+        "raw": "",
+        "note": "for serving"
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "add",
+      "detail": "Using bones, cartilage, uncooked gizzards, liver, turkey neck, turkey wing tips and any scraps from the skin, add to a large stock pot and cover with enough water to allow 2 or 3 inches of water on top.",
+      "ingredient_ids": [
+        "d9e94a26",
+        "43942bea"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "simmer",
+      "detail": "Simmer the broth on medium-low heat, checking every 30-40 minutes and stirring, for 2-4 hours. Add water as needed the first hour, and then let the broth condense for use in the gumbo.",
+      "ingredient_ids": [
+        "d9e94a26",
+        "43942bea"
+      ],
+      "consumes_steps": [
+        0
+      ],
+      "is_header": false,
+      "duration": "2-4 hours"
+    },
+    {
+      "action": "remove",
+      "detail": "Remove the bones and neck after cooling and strain the broth with a colander, removing remaining pieces of turkey bones and scrapings.",
+      "ingredient_ids": [
+        "d9e94a26",
+        "43942bea"
+      ],
+      "consumes_steps": [
+        1
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "measure",
+      "detail": "Measure equal parts oil and all-purpose flour.",
+      "ingredient_ids": [
+        "98a83f1a",
+        "914956ea"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "heat",
+      "detail": "Place a cast iron skillet over medium to medium-low heat and heat the oil.",
+      "ingredient_ids": [
+        "98a83f1a"
+      ],
+      "consumes_steps": [
+        3
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "whisk",
+      "detail": "Whisk or sprinkle the flour into the oil until smooth.",
+      "ingredient_ids": [
+        "98a83f1a",
+        "914956ea"
+      ],
+      "consumes_steps": [
+        4
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "stir",
+      "detail": "Stir the oil and flour frequently until small bubbles appear. Do not fry the flour or let it boil.",
+      "ingredient_ids": [
+        "98a83f1a",
+        "914956ea"
+      ],
+      "consumes_steps": [
+        5
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "cook",
+      "detail": "Stir or whisk continuously, until the color is similar to a penny, and continue scraping the bottom and corners of the pan so it does not scorch or burn.",
+      "ingredient_ids": [
+        "98a83f1a",
+        "914956ea"
+      ],
+      "consumes_steps": [
+        6
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "set aside",
+      "detail": "Once the roux is made, remove from heat and set aside.",
+      "ingredient_ids": [
+        "98a83f1a",
+        "914956ea"
+      ],
+      "consumes_steps": [
+        7
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "chop",
+      "detail": "Chop 2-3 ribs of celery, including leafy greens. Chop 1 medium or medium-large yellow onion.",
+      "ingredient_ids": [
+        "f889cb76",
+        "f65e3f3a"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "chop",
+      "detail": "Shred or chop leftover turkey meat into spoon-size chunks.",
+      "ingredient_ids": [
+        "983e5d6a"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "saute",
+      "detail": "Sauté the onions and celery with oil on medium-high heat until the onions are translucent and the celery is tender. Be careful not to brown the onions.",
+      "ingredient_ids": [
+        "f65e3f3a",
+        "f889cb76",
+        "98a83f1a"
+      ],
+      "consumes_steps": [
+        9
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "combine",
+      "detail": "Combine the onion, celery, roux and broth in a large stockpot and heat on medium until thoroughly blended. (Add water if needed)",
+      "ingredient_ids": [
+        "f65e3f3a",
+        "f889cb76",
+        "98a83f1a",
+        "914956ea",
+        "d9e94a26",
+        "43942bea",
+        "983e5d6a"
+      ],
+      "consumes_steps": [
+        2,
+        8,
+        11
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the turkey meat and ensure the liquid broth is covering the meat with 1-2 inches on top. (Add water if needed)",
+      "ingredient_ids": [
+        "983e5d6a",
+        "d9e94a26",
+        "43942bea"
+      ],
+      "consumes_steps": [
+        12,
+        10
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "simmer",
+      "detail": "Simmer the gumbo on low heat for 1 hour and taste test. Add salt and pepper as needed. Also add McIlhenny Tabasco sauce or Louisiana hot sauce to taste.",
+      "ingredient_ids": [
+        "983e5d6a",
+        "d9e94a26",
+        "43942bea",
+        "f43be4a3",
+        "eb44ace2",
+        "f8791c11"
+      ],
+      "consumes_steps": [
+        13
+      ],
+      "is_header": false,
+      "duration": "1 hour"
+    },
+    {
+      "action": "simmer",
+      "detail": "Return to low heat, simmering for at least 1 additional hour.",
+      "ingredient_ids": [
+        "983e5d6a",
+        "d9e94a26",
+        "43942bea"
+      ],
+      "consumes_steps": [
+        14
+      ],
+      "is_header": false,
+      "duration": "1 hour"
+    },
+    {
+      "action": "stew",
+      "detail": "Meanwhile, stew young tender okra (tops discarded, sliced 1/2 inch to 1 inch) with tomatoes (fresh and crushed, or canned) in a separate large pot while the gumbo is simmering.",
+      "ingredient_ids": [],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "serve",
+      "detail": "Serve the gumbo over rice with filé or okra with stewed tomatoes or green onions, and French baguette with butter.",
+      "ingredient_ids": [
+        "8f36e827",
+        "2790b738",
+        "4f854751",
+        "5c1382c6",
+        "f10084c1",
+        "ff027f0e",
+        "5767c211"
+      ],
+      "consumes_steps": [
+        15,
+        16
+      ],
+      "is_header": false,
+      "duration": ""
+    }
+  ],
+  "servings": null,
+  "source": "the Berry's kitchen",
+  "notes": "Missy uses EVOO for the oil.",
+  "scale_factor": 1.0,
+  "created_at": "2026-11-25T08:39:57.771815+00:00",
+  "original_protein": null,
+  "substituted_protein": null,
+  "credit": "From the Berry's kitchen"
+}
