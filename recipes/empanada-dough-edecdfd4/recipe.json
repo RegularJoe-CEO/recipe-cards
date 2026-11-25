@@ -1,0 +1,221 @@
+{
+  "id": "edecdfd4-5a36-4019-b4f5-ec12f1759c22",
+  "title": "Empanada Dough",
+  "ingredients": [
+    {
+      "id": "027e2bf1",
+      "name": "all-purpose flour",
+      "quantity": {
+        "amount": 4.0,
+        "unit": "cups",
+        "raw": "4",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "9f351b94",
+      "name": "salt",
+      "quantity": {
+        "amount": 1.5,
+        "unit": "tsp",
+        "raw": "1 1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "05888b3d",
+      "name": "sugar",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "tbsp",
+        "raw": "1",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "a48477b5",
+      "name": "baking powder",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "tsp",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "4961c07e",
+      "name": "cold butter",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "cup",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "8e151cff",
+      "name": "eggs",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "36b507b2",
+      "name": "heavy cream",
+      "quantity": {
+        "amount": 0.75,
+        "unit": "cup",
+        "raw": "3/4",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "8d559908",
+      "name": "milk",
+      "quantity": {
+        "amount": 3.0,
+        "unit": "tbsp",
+        "raw": "2 to 4",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "481fb40e",
+      "name": "egg beaten with a splash of milk",
+      "quantity": {
+        "amount": 1.0,
+        "unit": "",
+        "raw": "1",
+        "note": "for egg wash"
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "whisk",
+      "detail": "Whisk the flour, salt, sugar and baking powder together.",
+      "ingredient_ids": [
+        "027e2bf1",
+        "9f351b94",
+        "05888b3d",
+        "a48477b5"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "cut",
+      "detail": "Cut in the cold butter until it looks like coarse crumbs.",
+      "ingredient_ids": [
+        "4961c07e"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "beat",
+      "detail": "Beat the eggs with the heavy cream, then stir that into the flour mixture.",
+      "ingredient_ids": [
+        "027e2bf1",
+        "8e151cff",
+        "36b507b2"
+      ],
+      "consumes_steps": [
+        1
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add milk a tablespoon at a time, just until the dough comes together.",
+      "ingredient_ids": [
+        "8d559908"
+      ],
+      "consumes_steps": [
+        2
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "knead",
+      "detail": "Knead it briefly, wrap it, and chill for 30 minutes.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        3
+      ],
+      "is_header": false,
+      "duration": "30 minutes"
+    },
+    {
+      "action": "preheat",
+      "detail": "Preheat the oven to 375°F.",
+      "ingredient_ids": [],
+      "consumes_steps": [],
+      "is_header": true,
+      "duration": ""
+    },
+    {
+      "action": "roll",
+      "detail": "Roll it out, cut circles, fill them, fold, and crimp.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        4
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "brush",
+      "detail": "Brush them with the egg wash before baking.",
+      "ingredient_ids": [
+        "481fb40e"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "bake",
+      "detail": "Bake at 375°F for 20 to 25 minutes, until golden.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        7
+      ],
+      "is_header": false,
+      "duration": "20 to 25 minutes"
+    }
+  ],
+  "servings": null,
+  "source": "the Market at Tandy Hall",
+  "notes": "Empanadas are extremely flexible, and you can put just about any filling you'd like inside of them.\n\nTry blueberry, strawberry and Nutella, or apple cinnamon. Or go savory with taco meat and cheese, breakfast eggs and sausage, or leftover Thanksgiving turkey.",
+  "scale_factor": 1.0,
+  "created_at": "2026-11-25T00:37:17.987769+00:00",
+  "original_protein": null,
+  "substituted_protein": null,
+  "credit": "From the Market at Tandy Hall"
+}
