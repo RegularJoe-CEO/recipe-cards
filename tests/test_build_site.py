@@ -86,6 +86,28 @@ class BuildSiteTests(unittest.TestCase):
             self.assertIn("From the Boyd family kitchen", markup)
             self.assertNotIn("From the kitchen of", markup)
 
+    def test_recipe_notes_appear_at_bottom(self):
+        recipe = {
+            "title": "Empanada Dough",
+            "ingredients": [],
+            "steps": [{"detail": "Bake."}],
+            "notes": (
+                "Empanadas are extremely flexible, and you can put just about any filling you'd like inside of them.\n\n"
+                "Try blueberry, strawberry and Nutella."
+            ),
+        }
+        with tempfile.TemporaryDirectory() as temporary:
+            page = Path(temporary) / "index.html"
+            build_site.build_recipe_page(recipe, "empanada-dough", "https://example.com", page)
+            markup = page.read_text(encoding="utf-8")
+            markup_text = __import__("html").unescape(markup)
+            self.assertIn("Empanadas are extremely flexible, and you can put just about any filling you'd like inside of them.", markup_text)
+            self.assertIn("Try blueberry, strawberry and Nutella.", markup_text)
+            self.assertGreater(
+                markup.find("class=\"source notes\""),
+                markup.find("How to make it"),
+            )
+
 
 if __name__ == "__main__":
     unittest.main()

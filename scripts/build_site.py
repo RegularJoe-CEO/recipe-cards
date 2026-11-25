@@ -261,6 +261,16 @@ def build_recipe_page(recipe: dict[str, Any], slug: str, base_url: str, output: 
     if source and urlparse(source).scheme in {"http", "https"}:
         source_html = f'<p class="source">Adapted from <a href="{esc(source)}" rel="nofollow">the original recipe</a>.</p>'
 
+    # Optional notes from recipe.json, shown at the bottom of the card in the
+    # existing source typography (no new layout). Paragraphs are split on
+    # blank lines so a filling note can sit under a short intro sentence.
+    notes_raw = html.unescape(str(recipe.get("notes") or ""))
+    notes_raw = re.sub(r"<[^>]+>", " ", notes_raw)
+    notes_parts = [re.sub(r"\s+", " ", part).strip() for part in re.split(r"\n\s*\n", notes_raw)]
+    notes_html = "".join(
+        f'<p class="source notes">{esc(part)}</p>' for part in notes_parts if part
+    )
+
     # Optional per-recipe credit in recipe.json, e.g. "From the Boyd family kitchen"
     credit = clean_text(recipe.get("credit"))
     if credit:
@@ -285,6 +295,7 @@ def build_recipe_page(recipe: dict[str, Any], slug: str, base_url: str, output: 
         <section><h2 class="hand">How to make it</h2><ol class="steps">{step_html}</ol></section>
       </div>
       {source_html}
+      {notes_html}
     </article>
     <section class="glance">
       <h2 class="hand">The whole recipe on one card</h2>
