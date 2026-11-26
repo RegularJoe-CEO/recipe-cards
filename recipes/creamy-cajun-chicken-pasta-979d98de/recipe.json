@@ -1,0 +1,302 @@
+{
+  "id": "979d98de-2926-49f1-9707-e5e859d23977",
+  "title": "Creamy Cajun Chicken Pasta",
+  "ingredients": [
+    {
+      "id": "34b507b2",
+      "name": "linguine pasta",
+      "quantity": {
+        "amount": 8.0,
+        "unit": "oz",
+        "raw": "8",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "409cef8d",
+      "name": "boneless skinless chicken breasts (about 1 lb or 450 g)",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": true,
+      "group": ""
+    },
+    {
+      "id": "65eb32e2",
+      "name": "olive oil",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "tsp",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "28dec09b",
+      "name": "unsalted butter",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "tbsp",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "114838e7",
+      "name": "Cajun seasoning (divided, or to taste depending on your brand)",
+      "quantity": {
+        "amount": 1.75,
+        "unit": "tbsp",
+        "raw": "1 1/2 to 2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "9840d9b1",
+      "name": "garlic cloves (minced)",
+      "quantity": {
+        "amount": 3.0,
+        "unit": "",
+        "raw": "3",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "cdf610f9",
+      "name": "diced tomatoes",
+      "quantity": {
+        "amount": 0.6666666666666666,
+        "unit": "cup",
+        "raw": "2/3",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "80b194ff",
+      "name": "heavy whipping cream",
+      "quantity": {
+        "amount": 1.5,
+        "unit": "cup",
+        "raw": "1 1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "69e1c164",
+      "name": "grated parmesan cheese",
+      "quantity": {
+        "amount": 0.5,
+        "unit": "cup",
+        "raw": "1/2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    },
+    {
+      "id": "5375cae0",
+      "name": "parsley (finely chopped, to serve)",
+      "quantity": {
+        "amount": 2.0,
+        "unit": "tbsp",
+        "raw": "2",
+        "note": ""
+      },
+      "is_protein": false,
+      "group": ""
+    }
+  ],
+  "steps": [
+    {
+      "action": "bring",
+      "detail": "Bring a large pot of water to a boil and add 1 Tbsp salt.",
+      "ingredient_ids": [],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "cook",
+      "detail": "Cook pasta according to package instructions until al dente.",
+      "ingredient_ids": [
+        "34b507b2"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "reserve",
+      "detail": "Reserve 1/2 cup of pasta water then drain, cover, and keep warm.",
+      "ingredient_ids": [
+        "34b507b2"
+      ],
+      "consumes_steps": [
+        1
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "beat",
+      "detail": "Beat the chicken breasts with a meat mallet so that they are even in thickness and season all over with 1 Tbsp Cajun seasoning.",
+      "ingredient_ids": [
+        "409cef8d",
+        "114838e7"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "non-reactive",
+      "detail": "Heat 2 tsp oil in a large non-reactive skillet over medium-high heat.",
+      "ingredient_ids": [
+        "65eb32e2"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Once hot, add the chicken and sear on both sides.",
+      "ingredient_ids": [
+        "409cef8d"
+      ],
+      "consumes_steps": [
+        4
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "turn",
+      "detail": "Turn heat down to low and sauté until cooked through and 165°F on a thermometer.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        5
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "transfer",
+      "detail": "Transfer to a cutting board, slice into thin strips, and cover to keep warm.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        6
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "skillet",
+      "detail": "Sauté the butter and garlic in the same skillet over medium heat for 30-60 seconds or until the garlic is fragrant.",
+      "ingredient_ids": [
+        "28dec09b",
+        "9840d9b1"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": "30-60 seconds"
+    },
+    {
+      "action": "add",
+      "detail": "Add the diced tomatoes and sauté another 2 minutes.",
+      "ingredient_ids": [
+        "cdf610f9"
+      ],
+      "consumes_steps": [],
+      "is_header": false,
+      "duration": "2 minutes"
+    },
+    {
+      "action": "add",
+      "detail": "Add in the heavy whipping cream, add the remaining 1/2 to 1 Tbsp Cajun seasoning, to taste, and parmesan cheese, and bring to a simmer.",
+      "ingredient_ids": [
+        "114838e7",
+        "80b194ff",
+        "69e1c164"
+      ],
+      "consumes_steps": [
+        9
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "season",
+      "detail": "Season to taste if needed.",
+      "ingredient_ids": [],
+      "consumes_steps": [
+        10
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add the sliced chicken and cooked pasta to the sauce and toss until combined and pasta and chicken are warmed through.",
+      "ingredient_ids": [
+        "34b507b2",
+        "409cef8d"
+      ],
+      "consumes_steps": [
+        11
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "add",
+      "detail": "Add warm reserved pasta water if desired to thin the sauce.",
+      "ingredient_ids": [
+        "34b507b2"
+      ],
+      "consumes_steps": [
+        12
+      ],
+      "is_header": false,
+      "duration": ""
+    },
+    {
+      "action": "serve",
+      "detail": "Serve with freshly grated parmesan and chopped parsley.",
+      "ingredient_ids": [
+        "69e1c164",
+        "5375cae0"
+      ],
+      "consumes_steps": [
+        13
+      ],
+      "is_header": false,
+      "duration": ""
+    }
+  ],
+  "servings": "6",
+  "source": "https://natashaskitchen.com/creamy-cajun-chicken-pasta/",
+  "notes": "",
+  "scale_factor": 1.0,
+  "created_at": "2026-11-26T03:18:40.104350+00:00",
+  "original_protein": "boneless skinless chicken breasts (about 1 lb or 450 g)",
+  "substituted_protein": null,
+  "credit": "From Natasha's Kitchen"
+}
